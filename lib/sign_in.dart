@@ -41,13 +41,11 @@ Future<String> signInWithGoogle() async {
 
     return '$user';
 
-// _____________________________________
-
     final User currentUser = _auth.currentUser;
     assert(user.uid == currentUser.uid);
 
     print(
-        "************************** Sign in google Succesfully ! *****************************************************************");
+        "************************** Sign in google Succesfully ! ***********************************");
   }
 
   return null;
