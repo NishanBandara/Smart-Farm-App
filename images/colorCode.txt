@@ -1,0 +1,6 @@
+HTML/HEX code:	#00b38e	
+RGB code:	rgb(0, 179, 142)	
+Hsl code:	hsl(168, 100%, 35%)	
+Hwb code:	hwb(168, 0%, 30%)	
+Cmyk code:	cmyk(100%, 0%, 21%, 30%)	
+Ncol code:	G79, 0%, 30%
