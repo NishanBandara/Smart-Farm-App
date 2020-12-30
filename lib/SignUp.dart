@@ -1,5 +1,6 @@
+import 'package:SmartFarm/DashBoards/HomePage.dart';
 import 'package:SmartFarm/authentication.dart';
-import 'package:SmartFarm/home.dart';
+import 'package:SmartFarm/TestHome.dart';
 import 'package:SmartFarm/sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -197,7 +198,8 @@ class _SignUpState extends State<SignUp> {
                       if (result != null) {
                         Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) {
-                            return Home();
+                            return TestHome();
+                            // return HomePage();
                           }),
                         );
                       }

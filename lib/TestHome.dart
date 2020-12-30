@@ -1,9 +1,10 @@
+import 'package:SmartFarm/DashBoards/HomePage.dart';
 import 'package:SmartFarm/SignUp.dart';
 import 'package:flutter/material.dart';
 import 'sign_in.dart';
 
-class Home extends StatelessWidget {
-  static const Route = "/home";
+class TestHome extends StatelessWidget {
+  static const Route = "/Testhome";
 
   static var routeName;
 
@@ -16,6 +17,11 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
+              Text("Checking Page For Authentication"),
+              SizedBox(
+                height: 3,
+                width: 3,
+              ),
               CircleAvatar(
                 backgroundImage: NetworkImage(
                   imageUrl,
@@ -23,7 +29,7 @@ class Home extends StatelessWidget {
                 radius: 60,
                 backgroundColor: Colors.transparent,
               ),
-              SizedBox(height: 40),
+              SizedBox(height: 30),
               Text(
                 'NAME',
                 style: TextStyle(
@@ -71,6 +77,20 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 elevation: 5,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40)),
+              ),
+              SizedBox(
+                height: 2,
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return HomePage();
+                  }));
+                },
+                child: Text("Continue"),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40)),
               )

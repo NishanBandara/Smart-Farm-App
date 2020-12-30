@@ -9,6 +9,12 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="SmartFarm"
         android:icon="@mipmap/ic_launcher">
+
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAAEM2Aub66gh10Susuj2agifnM-KDz3H8"/>
+               
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
